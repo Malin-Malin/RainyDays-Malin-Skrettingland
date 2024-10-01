@@ -5,7 +5,7 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
-body {
+/*body {
   color: var(--color-primary);
   background-color: var(--color-secondary);
 }
@@ -16,4 +16,32 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+} */
+/* trenger jeg å ha med noe av det som står over? */
+
+.julius-sans-one-regular {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.headerbackground{
+  background-color: rgba(10, 54, 65, 1);
+}
+
+
+
+nav li{
+  display: inline-block;
+ text-align: center;
+ padding: 10px;
+ text-decoration-line: none underline;/*hvorfor virker ikke denne */
+ color: rgba(10, 54, 65, 1); /*hvorfor virker ikke denne */
+}
+
+.footerInfo li{
+  padding: 5px;
+  display: inline-block;
 }
