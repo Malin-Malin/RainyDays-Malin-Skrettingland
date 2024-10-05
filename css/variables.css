@@ -23,10 +23,6 @@
   color:rgba(236, 242, 240, 1);
 }
 
-.productCard{
-  background-color: rgba(10, 54, 65, 0.25);
-} 
-/* denne har du ikke brukt enda- kasse*/
 
 h1, 
 h2{
@@ -37,6 +33,9 @@ h2{
 .headerBackground
 {
   background-color: rgba(10, 54, 65, 1);
+  text-align: center;
+  padding:30px;
+  box-sizing: border-box;
 }
 
 .DividerLine{
@@ -49,4 +48,10 @@ h2{
 
 .DividerBox{
   background-color: rgba(177, 112, 47, 0.5);
+}
+
+*, 
+* ::before,
+* :: after{
+box-sizing: border-box;
 }

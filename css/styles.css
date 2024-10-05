@@ -25,14 +25,26 @@
   font-style: normal;
 }
 
-
-
-.headerbackground{
-  background-color: rgba(10, 54, 65, 1);
+body{
+  font-size: 1.125rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+  text-align: center;
 }
 
+a{
+  text-decoration: none;
+  color: rgba(10, 54, 65, 1)
+}
 
+.headerbackground{
+  background-color: rgba(10, 54, 65, 1);  
+}
 
+img {
+  max-width: 500px;
+  }/*fiks disse */
+  
 nav li{
   display: inline-block;
  text-align: center;
@@ -41,7 +53,31 @@ nav li{
  color: rgba(10, 54, 65, 1); /*hvorfor virker ikke denne */
 }
 
+.productimg{
+    max-width: 200px;
+    max-height:400px;
+  }
+
+.columnsProducts{
+display:grid;
+gap: 1em;
+padding:30px;
+grid-template-columns: 1fr 1fr 1fr;
+background-color: rgba(10, 54, 65, 0.25);
+}
+
+.productCard{
+  background-color: rgba(10, 54, 65, 0.25);
+} 
+/* denne har du ikke brukt enda- kasse*/
+
+.imgdivider{
+min-width: 100%;
+}
+
 .footerInfo li{
   padding: 5px;
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*hvorfor virker ikke denne */
+  
 }
