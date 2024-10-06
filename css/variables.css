@@ -38,20 +38,18 @@ h2{
   box-sizing: border-box;
 }
 
+img {
+  width: 100%; 
+  height: auto;
+  }/*fiks disse */
+
 .DividerLine{
   background-color: rgba(177, 112, 47, 0.5);
+  max-width: 100%;
+  height: 5px;
+  background-color: rgba(10, 54, 65, 1);
 }
 
 .textcolor{
  color:rgba(236, 242, 240, 1);
-}
-
-.DividerBox{
-  background-color: rgba(177, 112, 47, 0.5);
-}
-
-*, 
-* ::before,
-* :: after{
-box-sizing: border-box;
 }

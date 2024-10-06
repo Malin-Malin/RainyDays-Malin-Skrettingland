@@ -19,6 +19,9 @@
 } */
 /* trenger jeg å ha med noe av det som står over? */
 
+
+/* For all pages */
+
 .julius-sans-one-regular {
   font-family: "Julius Sans One", sans-serif;
   font-weight: 400;
@@ -41,9 +44,9 @@ a{
   background-color: rgba(10, 54, 65, 1);  
 }
 
-img {
-  max-width: 500px;
-  }/*fiks disse */
+.logo{
+  width: 20%;
+}
   
 nav li{
   display: inline-block;
@@ -53,9 +56,19 @@ nav li{
  color: rgba(10, 54, 65, 1); /*hvorfor virker ikke denne */
 }
 
+/* Home page */
+
 .productimg{
-    max-width: 200px;
-    max-height:400px;
+    width: 400px;
+    height:450px;
+   object-fit: contain;  
+  }
+
+  .homepage-start{
+    padding: 20px;
+    display: inline-block; 
+    max-width: 800px;
+
   }
 
 .columnsProducts{
@@ -63,21 +76,99 @@ display:grid;
 gap: 1em;
 padding:30px;
 grid-template-columns: 1fr 1fr 1fr;
-background-color: rgba(10, 54, 65, 0.25);
+/*background-color: rgba(10, 54, 65, 0.25);*/
+border-radius: 50px;
+margin: 70px;
+margin-top: -10px;
 }
 
+.imgdivider{
+width: 100%;
+}
+/* Checkout page*/
 .productCard{
   background-color: rgba(10, 54, 65, 0.25);
 } 
 /* denne har du ikke brukt enda- kasse*/
 
-.imgdivider{
-min-width: 100%;
+
+
+.DividerBox {
+  background-color: rgba(177, 112, 47, 0.5);
+  display: flex;
+  align-items: center;
+  padding:40px;
+  border-radius: 20px;
+  max-width: 100%;
+  width: 70%;
+  margin: 3% 3% 3% 15%;
+  }
+
+.imagecontainer{
+  margin-left: 40px;
 }
 
+/*.DividerBox {
+  background-color: rgba(177, 112, 47, 0.5);
+  display: inline-block;
+  padding:20px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 20px;
+  
+}*/
+
+/*display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+
+.text {
+  grid-column: 2;
+  padding:10%;
+}
+
+.imagecontainer {
+  display: grid;
+  grid-column: 3;
+  justify-content: center;
+  align-items: center;     
+}*/
+
+
+/* About page*/
+
+.about{
+display: grid;
+align-items: center;
+padding:40px;
+max-width: 100%;
+width: 70%;
+margin: 3% 3% 3% 15%;
+height: ;
+}
+
+.aboutText{
+grid-column: 1;
+text-align: left;
+max-width: 85%;
+}
+
+.aboutImage{
+grid-column: 2;
+margin-left: 40px;
+}
+/* Forms */
+.form__input{
+ display: block; 
+}
+
+.form{
+  text-align: left;
+}
+
+/* Footer */
 .footerInfo li{
   padding: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /*hvorfor virker ikke denne */
-  
+  grid-template-columns: 1fr 1fr 1fr; /*hvorfor virker ikke denne */ 
 }
