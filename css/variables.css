@@ -4,10 +4,12 @@
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
-.raleway-<uniquifier> {
+p,
+h3,
+.raleway-font {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
 /*dette ser ikke rett ut. om jeg har den her, må den også være i css styles da?*/
@@ -18,11 +20,15 @@
   font-style: normal;
 } /*Header and paragraph. OM DEN STÅR HER, kan jeg ta den vekk fra css? selv om.. google fonts sa jeg skulle plassere den der når jeg fikk header fonten*/
 
-.button{
-  background-color; rgba(106, 67, 28, 1);
+
+.btn{
+  background-color: rgba(106, 67, 28, 1);
   color:rgba(236, 242, 240, 1);
 }
 
+p{
+  text-align: left;
+}
 
 h1, 
 h2{
@@ -33,9 +39,8 @@ h2{
 .headerBackground
 {
   background-color: rgba(10, 54, 65, 1);
-  text-align: center;
   padding:30px;
-  box-sizing: border-box;
+  margin-top: -40px;
 }
 
 img {
@@ -44,12 +49,14 @@ img {
   }/*fiks disse */
 
 .DividerLine{
-  background-color: rgba(177, 112, 47, 0.5);
   max-width: 100%;
   height: 5px;
   background-color: rgba(10, 54, 65, 1);
+  margin: 40px;
 }
 
 .textcolor{
  color:rgba(236, 242, 240, 1);
 }
+
+

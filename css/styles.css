@@ -40,6 +40,8 @@ a{
   color: rgba(10, 54, 65, 1)
 }
 
+/* header */
+
 .headerbackground{
   background-color: rgba(10, 54, 65, 1);  
 }
@@ -47,50 +49,119 @@ a{
 .logo{
   width: 20%;
 }
-  
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.fa-solid{
+  margin:40px 10px;
+color:rgba(10, 54, 65, 1) ;
+
+}
+
 nav li{
-  display: inline-block;
+ display: inline-block;
+ padding: 15px;
+ color: rgba(10, 54, 65, 1);
+font-size: 1.5rem;
+}
+
+/* Hover state */ 
+
+
+
+/* buttons */
+
+.btn{
+ font-size: 1rem;
+ padding: 10px 80px;
+ border-radius: 8px;
  text-align: center;
- padding: 10px;
- text-decoration-line: none underline;/*hvorfor virker ikke denne */
- color: rgba(10, 54, 65, 1); /*hvorfor virker ikke denne */
+ transition: all 1s ease-in-out;
+}
+
+.btn-small{ 
+  font-size:0.8rem;
+  padding:8px 30px;
+  border: none;
+}
+
+/* Hover state */ 
+
+.btn:hover{
+ background-color:rgba(177, 112, 47, 0.5);
+ font-size: 1.2rem;
+ color:rgba(10, 54, 65, 1);
 }
 
 /* Home page */
 
-.productimg{
-    width: 400px;
-    height:450px;
-   object-fit: contain;  
-  }
+.homepage-start{
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .homepage-start{
-    padding: 20px;
-    display: inline-block; 
-    max-width: 800px;
+.homapageItems > * {
+  flex: 1;
+}
+.homapageItems{
+  display: flex;
+}
 
-  }
+.homapageImages{
+  width: 40%;
+  padding:5px;
+}
 
-.columnsProducts{
-display:grid;
-gap: 1em;
-padding:30px;
-grid-template-columns: 1fr 1fr 1fr;
-/*background-color: rgba(10, 54, 65, 0.25);*/
-border-radius: 50px;
-margin: 70px;
-margin-top: -10px;
+.homepage-text{
+
 }
 
 .imgdivider{
-width: 100%;
+  width: 100%;
+  }
+
+
+
+.columnsProducts{
+display:grid;
+gap: 20px;
+padding:30px;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto auto;
+/*background-color: rgba(10, 54, 65, 0.25);*/
+border-radius: 50px;
+margin: 70px;
 }
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  }
+
+  .productimg {
+    max-width: auto; 
+    height: 500px;
+    margin-bottom: 10px;
+  }
+
+ 
+
 /* Checkout page*/
 .productCard{
   background-color: rgba(10, 54, 65, 0.25);
 } 
 /* denne har du ikke brukt enda- kasse*/
-
 
 
 .DividerBox {
@@ -135,7 +206,56 @@ width: 100%;
 }*/
 
 
-/* About page*/
+
+
+
+/* product page*/
+
+.productDetails{
+  max-width: 1200px;
+  display: flex;
+  margin: auto auto;
+  padding: 100px;
+  align-items: center;
+ 
+}
+
+.productDetails p{
+  display: ;
+  padding:10px;
+  text-align: left;
+  width: 500px;
+  }
+
+.ProductPageImg{
+
+}
+
+.productInfo{
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  padding-bottom: 100px;
+  text-align: left;
+}
+
+.productInfo > *{
+  flex:1
+}
+
+.productInfo h2{
+  text-align: center;
+}
+
+.features li{
+  display: inline-block;
+}
+
+
+
+
+
+/* about page*/
 
 .about{
 display: grid;
@@ -144,7 +264,7 @@ padding:40px;
 max-width: 100%;
 width: 70%;
 margin: 3% 3% 3% 15%;
-height: ;
+
 }
 
 .aboutText{
@@ -157,6 +277,10 @@ max-width: 85%;
 grid-column: 2;
 margin-left: 40px;
 }
+
+
+
+
 /* Forms */
 .form__input{
  display: block; 
@@ -166,9 +290,33 @@ margin-left: 40px;
   text-align: left;
 }
 
+
+
+
+
 /* Footer */
-.footerInfo li{
-  padding: 5px;
+footer{
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /*hvorfor virker ikke denne */ 
+ 
+  grid-template-columns: repeat(3, 1fr);
 }
+
+.footerimg{
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+footer p{
+  display: flex;
+  margin-left: 100px;
+}
+
+footer .fa-solid{
+margin:0 15px;
+  }
+
+footer .fa-brands{
+  margin-bottom: 30px;
+}
+
