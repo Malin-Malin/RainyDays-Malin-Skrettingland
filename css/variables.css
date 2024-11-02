@@ -1,24 +1,10 @@
-/* Use this file to store your useful variables */
-/* This could be colors, fonts, or padding sizes! */
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-p,
-.raleway-font {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+:root {
+  --buttonBackgroundColor: rgba(106, 67, 28, 1); /* Background color for buttons */
+  --buttonTextColor: rgba(236, 242, 240, 1); /* Text color for buttons */
+  --mainColor: rgba(10, 54, 65, 1); /* Color for titles, header background, text on hover buttons and navigation icons and text */
+  --boxHoverColor: rgba(177, 112, 47, 0.5); /* Hover background color for buttons, background for box */
 }
-/*dette ser ikke rett ut. om jeg har den her, må den også være i css styles da?*/
-
-.julius-sans-one-regular {
-  font-family: "Julius Sans One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} /*Header and paragraph. OM DEN STÅR HER, kan jeg ta den vekk fra css? selv om.. google fonts sa jeg skulle plassere den der når jeg fikk header fonten*/
-
 
 .btn{
   background-color: var(--buttonBackgroundColor);
@@ -28,8 +14,17 @@ p,
   display: inline-block;
 }
 
-p{
+p,
+a, 
+li,
+span,
+form,
+input,
+select,
+button,
+textarea{
   text-align: left;
+  font-family: "Raleway", serif;
 }
 
 h1, 
@@ -39,8 +34,7 @@ h3{
   font-family: "Julius Sans One", sans-serif;
 }
 
-.headerBackground
-{
+.headerBackground{
   background-color: var(--mainColor);
   padding:30px;
   margin-top: -40px;
@@ -71,9 +65,3 @@ img {
  color: var(--buttonTextColor);
 }
 
-:root {
-  --buttonBackgroundColor: rgba(106, 67, 28, 1); /* Background color for buttons */
-  --buttonTextColor: rgba(236, 242, 240, 1); /* Text color for buttons */
-  --mainColor: rgba(10, 54, 65, 1); /* Color for titles, header background, text on hover buttons and navigation icons and text */
-  --boxHoverColor: rgba(177, 112, 47, 0.5); /* Hover background color for buttons, background for box */
-}

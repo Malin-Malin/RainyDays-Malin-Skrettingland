@@ -1,32 +1,7 @@
-/* Use import to split up your CSS into manageable chunks */
 @import url("./reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
 @import url("./variables.css");
-/* Feel free to add as many of these imports as you need */
-
-/*body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
-}
-
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-} */
-/* trenger jeg å ha med noe av det som står over? */
 
 /* For all pages */
-
-.julius-sans-one-regular {
-  font-family: "Julius Sans One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 *,
 *::before,
 *::after {
@@ -63,7 +38,6 @@ a {
     width: auto;
   }
 }
-
 
 .navbar {
   display: flex;
@@ -162,12 +136,13 @@ nav li {
 
 /* Home page */
 
-.homepage-start {
+.homepageStart {
   max-width: 1300px;
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .homapageItems > * {
@@ -190,6 +165,8 @@ nav li {
   border-radius: 20px;
   max-width: 1300px;
   margin: 20px auto;
+  gap: 20px;
+  min-width: 0;
 }
 
 .homepageTextBox {
@@ -197,7 +174,7 @@ nav li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  min-width: 400px;
+  min-width: 0;
 }
 
 .homepageTextBox h2 {
@@ -205,17 +182,47 @@ nav li {
 }
 .imagecontainer {
   margin-left: 20px;
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
 @media (max-width:900px){
 .dividerBox{
   display: flex;
   flex-direction: column-reverse;
+  margin: 20px;
 }
+}
+
+@media (max-width: 600px){
+  .homepageStart{
+    display: flex;
+    flex-direction: column;
+  }
+  .homepageText {
+    order: 1;
+  }
+  .img1{
+    order:0;
+  }
+  .img2{
+    order:2;
+  }
+}
+
+@media (max-width:500px){
+  .dividerBox{
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+  .homepageTextBox{
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px;
+  }
 }
 
 .imgdivider {
