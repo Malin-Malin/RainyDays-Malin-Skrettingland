@@ -5,7 +5,6 @@
 // <weight>: Use a value from 100 to 900
 
 p,
-h3,
 .raleway-font {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -22,8 +21,11 @@ h3,
 
 
 .btn{
-  background-color: rgba(106, 67, 28, 1);
-  color:rgba(236, 242, 240, 1);
+  background-color: var(--buttonBackgroundColor);
+  color:var(--buttonTextColor);
+  /*width: 150px;*/
+  height: 40px;
+  display: inline-block;
 }
 
 p{
@@ -31,32 +33,47 @@ p{
 }
 
 h1, 
-h2{
-  color: rgba(10, 54, 65, 1);
+h2, 
+h3{
+  color: var(--mainColor);
   font-family: "Julius Sans One", sans-serif;
 }
 
 .headerBackground
 {
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--mainColor);
   padding:30px;
   margin-top: -40px;
+  background-size: cover;
+  height: 200px;
+  width: auto;
 }
 
 img {
   width: 100%; 
   height: auto;
-  }/*fiks disse */
+  }
 
-.DividerLine{
+.dividerLine{
   max-width: 100%;
   height: 5px;
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--mainColor);
   margin: 40px;
 }
 
-.textcolor{
- color:rgba(236, 242, 240, 1);
+@media (max-width: 900px) {
+  .dividerLine{
+    margin-bottom: 20px;
+  }
 }
 
+.textcolor{
+ color: var(--buttonTextColor);
+}
 
+:root {
+  --buttonBackgroundColor: rgba(106, 67, 28, 1); /* Background color for buttons */
+  --buttonTextColor: rgba(236, 242, 240, 1); /* Text color for buttons */
+  --mainColor: rgba(10, 54, 65, 1); /* Color for titles, header background, text on hover buttons and navigation icons and text */
+  --boxHoverColor: rgba(177, 112, 47, 0.5); /* Hover background color for buttons, background for box */
+}
