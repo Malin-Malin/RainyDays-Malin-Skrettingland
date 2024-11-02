@@ -36,6 +36,7 @@ h3{
 
 .headerBackground{
   background-color: var(--mainColor);
+  background-attachment: fixed;
   padding:30px;
   margin-top: -40px;
   background-size: cover;
