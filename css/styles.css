@@ -95,7 +95,7 @@ nav li {
       padding:1px;
     }
     .navbarContainer a{
-      padding:2px;
+      padding:1px;
     }
     .navbar i, .navnar-list li i{
       font-size: 1.1em;
@@ -103,7 +103,13 @@ nav li {
     }
     .navbar i.fa, .navbar-list li i.fa-solid {
       font-size: 0.8em;
-      padding-bottom: 4px; }}
+      padding-bottom: 4px; }
+    }
+    @media (max-width:380px){
+      .navbar i.fa, .navbar-list li i.fa-solid {
+        margin: 20px 10px;
+      }
+    }
 
 /* Hover state */
 
@@ -564,13 +570,20 @@ align-items: center;
  align-items: center;
 }
 }
-
-@media (max-width: 650px) {
+@media (max-width: 700px) {
+  .container1 {
+    min-width: 250px; 
+  }
+  .container2 {
+    min-width: 400px;
+  }
+}
+@media (max-width: 500px) {
   .container1 {
     min-width: 200px; 
   }
   .container2 {
-    min-width: 400px;
+    min-width: 300px;
   }
 }
 
